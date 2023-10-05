@@ -144,11 +144,6 @@ body{
     border: 1px solid #7d58fe;
 }
 
-/* .mainContent div,
-.mainContent p,
-.mainContent h3{
-    border:1px solid red;
-} */
 
 .mainContent{
     overflow: scroll;
@@ -336,5 +331,5 @@ button,
 .navItem,
 .material-symbols-outlined:hover{
     cursor: pointer;
-}
+} 
 
