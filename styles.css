@@ -1,27 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&family=Lilita+One&family=Rowdies&family=Titan+One&display=swap');
+
+
 .wrapper{
     display:grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: 0.7fr 3fr;
+    grid-template-rows: 0.5 repeat(2,1fr);
     min-height: 100vh;
+    font-family: "Dosis","sans-serif", "monospace";
 }
 
 .sidebar {
     display:grid;
     grid-column:1;
-    grid-row: 1/ 3;
-    background-color: palegreen;
+    grid-row: 1/ 4;
+    background-color:#7d58fe;
     gap: 1rem;
 }
 
-.header {
-    grid-column: 2;
-    grid-row: 1/2;
-    background-color: palegoldenrod;
+.header{
+    background-color: #white;
+    display:grid;
+    grid-template-rows:2;
+    margin: 0 40px;
 }
 
-.articles{
+.topHeader{
+    display:grid;
+    grid-template-columns: 0.2fr 3fr 0.2fr .4fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: -10px 0;
+}
+
+
+.searchLogo{
+    grid-column: 1;
+    gap:0;
+}
+
+.search{
+    background-color: lightgray;
+    opacity: 1;
+    border:2px solid #7d58fe;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 90%;
+    line-height: 1.5em;
     grid-column: 2;
-    grid-row: 2/3;
-    background-color: palevioletred;
+}
+
+.user{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.notif{
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.account{
+    height: 20px;
+    grid-column: 4;
+    border: 1px solid #7d58fe;
+    border-radius:50%;
+    max-width: 50px;
+    height: auto;
+    margin-left:10px;
+    margin-right:0;
+}
+
+.user{
+    gap:0;
+    grid-column: 5;
+
+}
+
+.bottomHeader{
+    display:grid;
+    grid-template-columns: 1fr 5fr repeat(3,0.2fr);
+    grid-template-rows:0.1fr 0.1fr;
+    grid-auto-flow: row;
+    justify-items: start;
+    align-items: center;
+    gap: 0 1rem;
+    margin: 0 50px 0 0;
+}
+
+.userImg{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    border:1px solid #7d58fe;
+    border-radius:50%;
+    margin-left: 20px;
+    max-width: 75px;
+    height: auto;
+}
+.initialMsg{
+    grid-column: 2;
+    grid-row:1;
+}
+
+.userfName{
+    grid-column: 2;
+    grid-row:2;
+}
+
+.bottomHeader button{
+    grid-row: 1/3;
+}
+
+.bottomHeader h3{
+    font-size: 18px;
+    font-weight: 900;;
+}
+
+.bottomHeader h3,
+.bottomHeader h6{
+    margin: 0;
+}
+
+.bottomHeader button{
+    background-color: #7d58fe;
+    font-size: 18px;
+    border-radius: 40px;
+    padding:0.5rem 1rem;
+    color: white;
+    border: 1px solid #7d58fe;
+}
+
+
+.mainContent{
+    grid-column: 2;
+    grid-row: 2/4;
+    background-color: #f2f6ff;
 
 }

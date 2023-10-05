@@ -5,48 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <div class="wrapper">
         <div class="sidebar">
-            <div class="logo">Dashboard</div>
+            <div class="logo"><span class="material-symbols-outlined">
+                dashboard</span>Dashboard</div>
             <div class="sideMainNav">
-                <p>Home</p>
-                <p>Profile</p>
-                <p>Messages</p>
-                <p>History</p>
-                <p>Tasks</p>
-                <p>Communities</p>
+                <p><span class="material-symbols-outlined">
+                    home
+                    </span>Home</p>
+                <p><span class="material-symbols-outlined">
+                    person
+                    </span>Profile</p>
+                <p><span class="material-symbols-outlined">
+                    all_inbox
+                    </span>Messages</p>
+                <p><span class="material-symbols-outlined">
+                    history
+                    </span>History</p>
+                <p><span class="material-symbols-outlined">
+                    task
+                    </span>Tasks</p>
+                <p><span class="material-symbols-outlined">
+                    forum
+                    </span>Communities</p>
             </div>
             <div class="sideExtraNav">
-                <p>Settings</p>
-                <p>Support</p>
-                <p>Privacy</p>
+                <p><span class="material-symbols-outlined">
+                    settings
+                    </span>Settings</p>
+                <p><span class="material-symbols-outlined">
+                    help
+                    </span>Support</p>
+                <p><span class="material-symbols-outlined">
+                    security
+                    </span>Privacy</p>
             </div>
 
         </div>
         <div class="header">
             <div class="topHeader">
-                <input type="search">
-                <button>Notifications</button>
-                <button>Profile Pic</button>
-                <p>Name</p>
+                <span class="material-symbols-outlined searchLogo">search </span>
+                <input class="search" type="search">
+                <span class="material-symbols-outlined notif">notifications</span>
+                <img class=account src="/profileAvatar.png" alt="user profile profileAvatar">
+                <p class="user">Morgan Oakley</p>
             </div>
+
             <div class="bottomHeader">
-                <button>Profile Pic</button>
-                <p>Hello there,</p>
-                <h2>Morgan Oakley (@morgan)</h2>
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
+                <img class=userImg src="/profileAvatar.png" alt="user profile profileAvatar">
+                <h6 class="initialMsg">Hi there,</h6>
+                <h3 class="userfName">Morgan Oakley (@morgan)</h3>
+                <button class="newPost">New</button>
+                <button class="uploadFile">Upload</button>
+                <button class="sharePost">Share</button>
             </div>
         </div>
-        <div class="articles">
-            <div class="article1">article1</div>
-            <div class="article2">article2</div>
-            <div class="article3">article3</div>
-            <div class="article4">article4</div>
-            <div class="article5">article5</div>
+
+
+        <div class="mainContent">
+            <div class="projects">
+                <h3>Your Projects</h3>
+                <div class="article1">article1</div>
+                <div class="article2">article2</div>
+                <div class="article3">article3</div>
+                <div class="article4">article4</div>
+                <div class="article5">article5</div>
+            </div>
+            <div class="announcements">
+                <h3>Announcements</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt blanditiis eveniet facere, autem, alias maiores vel sed explicabo laboriosam optio vero rerum ducimus sint ipsam dolor. Veniam modi accusantium sapiente!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto veniam iure quas? Sunt nesciunt error voluptate dolore tempora id exercitationem, corporis nemo harum dolorem officia, impedit quis. Eveniet, autem deserunt.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem consequatur laboriosam sapiente sequi? Ratione accusamus praesentium distinctio accusantium illum consequuntur, itaque beatae qui magni, perspiciatis, sed totam assumenda veniam corrupti?</p>
+            </div>
+            <div class="trends">
+                <h3>Trending</h3>
+                <div>user1</div>
+                <div>user2</div>
+                <div>user3</div>
+                <div>user4</div> 
+            </div>
         </div>
     </div>
     <script src="apps.js"></script>
