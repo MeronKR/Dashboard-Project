@@ -235,12 +235,6 @@ body{
     grid-row: 3;
 }
 
-.star,
-.edit,
-.share:hover{
-    cursor: pointer;
-}
-
 .mainRight{
     grid-column: 2;
     grid-row:1;
@@ -326,3 +320,21 @@ body{
     padding-left:100px;
     justify-self: end;
 }
+
+.star,
+.edit,
+.share:hover{
+    cursor: pointer;
+}
+
+
+img,
+button,
+.trendsetter>p,
+.postTitle,
+.postText,
+.navItem,
+.material-symbols-outlined:hover{
+    cursor: pointer;
+}
+
