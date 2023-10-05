@@ -14,14 +14,15 @@ body{
 .sidebar {
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.6fr 0.5fr 0.5fr;
+    grid-template-rows: 0.1fr 0.5fr 0.5fr;
     grid-column:1;
     grid-row: 1 / 4;
     background-color:#7d58fe;
     color: white;
     font-size: 28px;
     padding-left: 1em;
-    align-items: center;
+    padding-top:20px;
+    align-items: start;
 }
 
 .logo{
@@ -34,7 +35,7 @@ body{
     background-color: #white;
     display:grid;
     grid-template-rows:2;
-    margin: 0 40px;
+    margin: 30px 40px;
 }
 
 .topHeader{
@@ -97,7 +98,7 @@ body{
     justify-items: start;
     align-items: center;
     gap: 0 1rem;
-    margin: 0 50px 0 0;
+    margin: 20px 50px 20px 0 ;
 }
 
 .userImg{
@@ -106,7 +107,8 @@ body{
     border:1px solid #7d58fe;
     border-radius:50%;
     margin-left: 20px;
-    max-width: 75px;
+    margin-top:15px;
+    max-height:75px;
     height: auto;
 }
 .initialMsg{
@@ -142,10 +144,140 @@ body{
     border: 1px solid #7d58fe;
 }
 
+/* .mainContent div,
+.mainContent p,
+.mainContent h3{
+    border:1px solid red;
+} */
 
 .mainContent{
-    grid-column: 2;
+    overflow: scroll;
+    grid-column: 2/4;
     grid-row: 2/4;
-    background-color: #f2f6ff;
+    background-color:#f2f6ff;
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    grid-template-rows: 1fr;
+}
 
+.mainLeft{
+    grid-column: 1;
+    grid-row:1;
+
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:0.1fr 1fr;
+}
+
+.mainTitle{
+    grid-column: 1/4;
+    grid-row:1;
+    margin-left: 50px;
+}
+
+.articles{
+    grid-column: 1/4;
+    grid-row: 2;
+    gap:15px;
+    padding: 0 50px;
+    
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 375px));
+    grid-template-rows: repeat(auto-fit, minmax(150px, 175px));
+}
+
+.article{
+    border-radius: 10px;
+    border-color: #7d58fe;
+    border-width: 15px;
+    border-style: none none none solid;
+    background-color: white;
+    padding:10px;
+
+    display:grid;
+    grid-template-columns: 1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-rows: 0.1fr 0.2fr 0.1fr;
+}
+
+.postTitle{
+    grid-column:1/5;
+    grid-row: 1;
+    margin: 0;
+    padding:0;
+}
+
+.postText{
+    grid-column:1/5;
+    grid-row: 2;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.star{
+    grid-column:2;
+    grid-row: 3;
+}
+.edit{
+    grid-column:3;
+    grid-row: 3;
+}
+
+.share{
+    grid-column:4;
+    grid-row: 3;
+}
+
+.star,
+.edit,
+.share:hover{
+    cursor: pointer;
+}
+
+.mainRight{
+    grid-column: 2;
+    grid-row:1;
+
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:0.1fr 0.2fr 0.1fr 0.2fr;
+}
+
+.announceTitle{
+    grid-column: 1;
+    grid-row:1;
+}
+
+.trendTitle{
+    grid-column: 1;
+    grid-row:3;
+}
+
+.announcements{
+    grid-column: 1;
+    grid-row: 2;
+    border-radius: 10px;
+    background-color: white;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    border: 1px solid #7d58fe;
+    margin-right:10px;
+}
+
+.post{
+    background-color: white;
+    padding:0 10px;
+    font-size: 12px;
+
+
+}
+
+.trends{
+    grid-column:1;
+    grid-row:4;
+}
+
+.mainContent h3{
+    font-size: 24px;
+    padding-left:20px;
+    margin-bottom: 10px;
 }
